@@ -4,37 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rozhko Maksym - Junior Front-End Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/animate.min.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./img/ROZHKO-favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="./css/fonts.css" rel="stylesheet">
+    <link href="./css/animate.min.css" rel="stylesheet" >
+    <link href="./css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <div class="hero-header">
-                <img src="./img/ROZHKO_free-file.png" alt="myLogo" class="hero-logo">
+                <a href="#" class="hero-header__logo wow fadeInDown" data-wow-delay="1.4s">
+                    <img src="./img/ROZHKO_logo.png" alt="myLogo" class="hero-logo">
+                </a>
                 <div class="social-links">
-                    <a target="_blank" href="https://github.com/Maksym-Rozhko" class="social-link"><img src="./img/svg/github.svg" alt="github"></a>
-                    <a target="_blank" href="#" class="social-link"><img src="./img/svg/twitter.svg" alt="twitter"></a>
-                    <a target="_blank" href="https://instagram.com/max_rozhko/" class="social-link"><img src="./img/svg/instagram.svg" alt="instagram"></a>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100044433044354" class="social-link"><img src="./img/svg/facebook.svg" alt="facebook"></a>
+                    <a target="_blank" href="https://github.com/Maksym-Rozhko" class="social-link wow fadeInDown" data-wow-delay="0.6s">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#github"></use>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="#" class="social-link wow fadeInDown" data-wow-delay="1s">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://instagram.com/max_rozhko/" class="social-link wow fadeInDown" data-wow-delay="1.4s">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100044433044354" class="social-link wow fadeInDown" data-wow-delay="1.8s">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
                 </div>
                 <!-- /.social-links -->
             </div>
             <!-- /.hero-header -->
             <div class="hero-content">
                 <div class="hero-text">
-                    <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">
-                        Front-End Developer
-                    </span>
+                    <h3 class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">
+                        Junior Front-End Developer
+                    </h3>
                     <h1 class="hero-title wow fadeInRight" data-wow-delay="0.4s">
                         Rozhko Maksym
                     </h1>
                     <p class="hero-description wow fadeInRight" data-wow-delay="0.6s">
-                        I develop websites for small and medium businesses. 
-                        You can order the design and layout 
-                        of a small website or online store from me.
+                        I'm currently looking for a Junior Front-end Developer job opportunity 
+                        that will allow me to work alongside an expert team of developers, 
+                        thereby helping to drive my career progression to more senior roles 
+                        in the future. I havee a firm knowledge of HTML, CSS, and JavaScript. 
+                        I'm self-motivated, organized with the ability to work well independently 
+                        or as part of a professional development team.
                     </p>
                     <button class="button hero-button wow fadeInRight" data-wow-delay="1s">
                         Free consultation
@@ -49,66 +72,111 @@
         <!-- /.container -->
     </header>
     <main class="main">
+        <section class="section features about-me">
+            <div class="container">
+                <h2 class="section-title wow fadeIn" data-wow-delay="1s">
+                    About me
+                </h2>
+                <div class="features-block">
+                    <div class="features-item about-me__block">
+                        <p class="features-text wow fadeInLeft" data-wow-delay="0.6s">
+                            I visit the gym to keep my body in good shape, also playing football.
+                            On a personal level, I'm a highly-motivated, results-oriented, self-driven, 
+                            hard-working, fast learner, and constantly seeking to improve my skills.
+                            In addition to this, I can adapt to any type of team environment, 
+                            I'm team-oriented and get along with others when working in a group. 
+                            I also have experience working independently, on schedule, and with tight deadlines.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.features -->
         <section class="section features">
             <div class="container">
                 <h2 class="section-title wow fadeIn" data-wow-delay="1s">
-                    It is convenient to work with me
+                    List of my current technical skills:
                 </h2>
                 <div class="features-block">
-                    <div class="features-item">
-                        <img src="./img/features/offer-img.svg" alt="Under contract" class="features-images wow fadeInLeft" data-wow-delay="0.4s">
-                        <h3 class="features-title wow fadeInLeft" data-wow-delay="0.4s">
-                            Under contract
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="features-item wow fadeInLeft" data-wow-delay="0.8s">
+                        <img src="./img/tech-skills/html.png" alt="HTML5" class="features-images">
+                        <h3 class="features-title">
+                            HTML5
                         </h3>
-                        <p class="features-text wow fadeInLeft" data-wow-delay="0.6s">
-                            provide all documents for accounting: contracts, invoices and acts. I work as an individual entrepreneur without VAT.
-                        </p>
-                    </div>
-                    <div class="features-item">
-                        <img src="./img/features/deadline-img.svg" alt="Right on time" class="features-images wow fadeInDown" data-wow-delay="0.6s">
-                        <h3 class="features-title wow fadeInDown" data-wow-delay="0.4s">
-                            Right on time
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="features-item wow fadeInDown" data-wow-delay="0.6s">
+                        <img src="./img/tech-skills/css.png" alt="CSS3" class="features-images">
+                        <h3 class="features-title wow fadeInLeft">
+                            CSS3
                         </h3>
-                        <p class="features-text wow fadeInDown" data-wow-delay="0.2s">
-                            The contract stipulates my responsibility for the term of the project. If I am late, I pay a forfeit.
-                        </p>
-                    </div>
-                    <div class="features-item">
-                        <img src="./img/features/agreement-img.svg" alt="Price tag for you" class="features-images wow fadeInRight" data-wow-delay="0.2s">
-                        <h3 class="features-title wow fadeInRight" data-wow-delay="0.4s">
-                            Price tag for you
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="features-item wow fadeInDown" data-wow-delay="0.4s">
+                        <img src="./img/tech-skills/js.png" alt="JavaScript" class="features-images">
+                        <h3 class="features-title">
+                            JavaScript
                         </h3>
-                        <p class="features-text wow fadeInRight" data-wow-delay="0.6s">
-                            If you have a non-standard project, I will calculate the price for the work and explain how the price is calculated.
-                        </p>
-                    </div>
-                    <div class="features-item">
-                        <img src="./img/features/steps-img.svg" alt="Subtotals" class="features-images wow fadeInLeft" data-wow-delay="0.2s">
-                        <h3 class="features-title wow fadeInLeft" data-wow-delay="0.4s">
-                            Subtotals
+                    </a>
+                    <a href="https://sass-lang.com/" target="_blank" class="features-item wow fadeInRight" data-wow-delay="0.8s">
+                        <img src="./img/tech-skills/sass.png" alt="SASS" class="features-images">
+                        <h3 class="features-title">
+                            SASS
                         </h3>
-                        <p class="features-text wow fadeInLeft" data-wow-delay="0.6s">
-                            I show the work in stages, and not at the last moment before the deadline. On time.
-                        </p>
-                    </div>
-                    <div class="features-item">
-                        <img src="./img/features/storage-img.svg" alt="Hosting and domain" class="features-images wow fadeInUp" data-wow-delay="0.2s">
-                        <h3 class="features-title wow fadeInUp" data-wow-delay="0.4s">
-                            Hosting and domain
+                    </a>
+                    <a href="https://getbootstrap.com/" target="_blank" class="features-item wow fadeInRight" data-wow-delay="1.4s">
+                        <img src="./img/tech-skills/bootstrap.png" alt="Bootstrap" class="features-images">
+                        <h3 class="features-title">
+                            Bootstrap
                         </h3>
-                        <p class="features-text wow fadeInUp" data-wow-delay="0.6s">
-                            If we have agreed on the price of the project, it includes everything: domain and hosting for a year + SSL certificate.
-                        </p>
-                    </div>
-                    <div class="features-item">
-                        <img src="./img/features/conversation-img.svg" alt="I will not abandon the project after delivery" class="features-images wow fadeInRight" data-wow-delay="0.2s">
-                        <h3 class="features-title wow fadeInRight" data-wow-delay="0.4s">
-                            the project after delivery
+                    </a>
+                    <a href="https://jquery.com/" target="_blank" class="features-item wow fadeInRight" data-wow-delay="1s">
+                        <img src="./img/tech-skills/jquery.png" alt="JQuery" class="features-images">
+                        <h3 class="features-title">
+                            JQuery
                         </h3>
-                        <p class="features-text wow fadeInRight" data-wow-delay="0.6s">
-                            I will teach you or your employee how to use the site, write down video instructions.
-                        </p>
-                    </div>
+                    </a>
+                    <a href="https://gulpjs.com/" target="_blank" class="features-item wow fadeInLeft" data-wow-delay="0.8s">
+                        <img src="./img/tech-skills/gulp.png" alt="Gulp" class="features-images">
+                        <h3 class="features-title">
+                            Gulp
+                        </h3>
+                    </a>
+                    <a href="https://webpack.js.org/" target="_blank" class="features-item wow fadeInLeft" data-wow-delay="1.3s">
+                        <img src="./img/tech-skills/webpack.png" alt="Webpack" class="features-images">
+                        <h3 class="features-title">
+                            Webpack
+                        </h3>
+                    </a>
+                    <a href="https://reactjs.org/" target="_blank" class="features-item wow fadeInLeft" data-wow-delay="1s">
+                        <img src="./img/tech-skills/react.png" alt="React" class="features-images">
+                        <h3 class="features-title">
+                            React
+                        </h3>
+                    </a>
+                    <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="features-item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="./img/tech-skills/photoshop.png" alt="Photoshop" class="features-images">
+                        <h3 class="features-title">
+                            Photoshop
+                        </h3>
+                    </a>
+                    <a href="https://avocode.com/" target="_blank"class="features-item wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="./img/tech-skills/avocode.png" alt="Avocode" class="features-images">
+                        <h3 class="features-title">
+                            Avocode
+                        </h3>
+                    </a>
+                    <a href="https://www.figma.com/" target="_blank" class="features-item wow fadeInRight" data-wow-delay="1s">
+                        <img src="./img/tech-skills/figma-white.png" alt="Figma" class="features-images">
+                        <h3 class="features-title">
+                            Figma
+                        </h3>
+                    </a>
+                    <a href="https://git-scm.com/" target="_blank" class="features-item wow fadeInLeft" data-wow-delay="0.6s">
+                        <img src="./img/tech-skills/git-white.png" alt="Git" class="features-images">
+                        <h3 class="features-title">
+                            Git
+                        </h3>
+                    </a>
                 </div>
                 <!-- /.features-block -->
             </div>

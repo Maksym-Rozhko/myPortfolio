@@ -104,12 +104,12 @@ body {
 }
 
 .hero-subtitle {
-    display: block;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 50px;
     color: #ffbb01;
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0;
+    display: flex;
 }
 
 .hero-title {
@@ -122,6 +122,8 @@ body {
     -webkit-text-fill-color: #ffbb01;
     -webkit-text-stroke-width: 0.02em;
     text-shadow: -5px 0 #fff;
+    display: flex;
+    letter-spacing: 2px;
 }
 
 .hero-description {
@@ -466,6 +468,10 @@ body {
 }
 
 /* contacts */
+.footer {
+    padding-bottom: 30px;
+}
+
 .contacts-form {
     background: #fff;
     box-shadow: -5px 5px 0px #ffc41d;
@@ -521,6 +527,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .contacts-text {
@@ -539,6 +546,15 @@ body {
     margin-bottom: 53px;
 }
 
+.text-message {
+    resize: none;
+    margin-bottom: 20px;
+    margin-bottom: 17px;
+    background-image: url('../img/sliders/slide-icon/feedback-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+}
+
 .contacts-social {
     flex-basis: 100%;
 }
@@ -551,9 +567,10 @@ body {
 }
 
 .contacts-link {
-    text-decoration: none;
+    text-decoration: transparent;
     color: inherit;
     margin-right: 37px;
+    transition-duration: .5s;
 }
 
 .contacts-link:last-child {
@@ -562,15 +579,16 @@ body {
 
 .contacts-link:hover {
     text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #FFBB01;
 }
 
 .contacts-policy {
-    display: inline-block;
+    display: block;
     font-size: 15px;
     line-height: 18px;
-    text-decoration: underline;
     color: #a5a5a5;
-    margin-top: 72px;
+    text-align: center;
 }
 
 @keyframes rotate {
@@ -611,6 +629,9 @@ body {
 @media (max-width: 836px) {
     .hero-content {
         flex-direction: column;
+    }
+    .hero-description {
+        text-align: left;
     }
     .hero-avatar {
         order: 0;
@@ -681,7 +702,7 @@ body {
         width: 100%;
     }
     .section {
-        padding: 60px 0;
+        padding: 30px 0;
     }
     .section-title {
         font-size: 19px;
@@ -740,8 +761,8 @@ body {
         line-height: 16px;
         margin-bottom: 13px;
     }
-    .contacts-policy {
-        margin-top: 32px;
+    .contacts-block {
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 474px) {

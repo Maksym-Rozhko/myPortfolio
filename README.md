@@ -1,4 +1,4 @@
 # myPortfolio
 
 #Pages
-https://maksym-rozhko.github.io/myPortfolio/
+https://mr-portfolio.netlify.app/

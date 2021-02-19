@@ -821,8 +821,8 @@
             <h2 class="section-title wow fadeIn" data-wow-delay="1s">
                 Get into contact with me
             </h2>
-            <div class="contacts-block">
-                <form name="portfolio" class="contacts-form" netlify>
+            <div id="contacts" class="contacts-block"> 
+                <form name="portfolio" class="contacts-form form-active" action="/#contacts" method="POST" netlify>
                     <h4 class="form-title wow fadeInUp" data-wow-delay="0.4s">
                         You can just leave a request, I will call you today
                     </h4>
@@ -831,8 +831,17 @@
                     <textarea name="text" name="message" class="input text-message wow fadeInLeft" placeholder="Your message" data-wow-delay="1.2s" required></textarea>
                     <button type="submit" class="button form-button wow fadeInUp" data-wow-delay="1.4s">
                         Free consultation
+                        <div class="spin-loader"></div>
                     </button>
                 </form>
+                <div class="contacts-form thanks-form">
+                    <h4 class="form-title wow fadeInUp" data-wow-delay="0.4s">
+                        Thank you for your request, I'll call you back soon.
+                    </h4>
+                    <button type="button" class="button form-reset-button">
+                        Back
+                    </button>
+                </div>
                 <div class="contacts-text">
                     <div class="contacts-data">
                         <div class="contacts-phone wow fadeInDown" data-wow-delay="0.6s">

@@ -93,3 +93,19 @@ formResetBtnEl.addEventListener('click', () => {
   changeFormContainer();
   submitSpinLoader.style.display = 'none';
 });
+
+const btnScrollToForm = document.querySelector('.hero-button');
+const formsBlock = document.querySelector('#contacts');
+
+btnScrollToForm.addEventListener('click', () => {
+  const scrollTarget = formsBlock;
+  const topOffset = 0;
+
+  const elementPosition = scrollTarget.getBoundingClientRect().top;
+  const offsetPosition = elementPosition - topOffset;
+
+  window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth'
+  });
+});
